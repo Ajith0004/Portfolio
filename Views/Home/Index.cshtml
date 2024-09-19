@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 3em;
+            color: #b0f2b4;
+        }
+        p {
+            font-size: 1.2em;
+            color: #aaaaaa;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Education section styles */
+        .education-section {
+            position: relative;
+            padding: 100px 0; /* Increase padding to accommodate background text */
+            background-color: #1e1e1e;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Large background text */
+        .education-background {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12em; /* Large font size for background text */
+            color: rgba(255, 255, 255, 0.05); /* Transparent text */
+            z-index: 1;
+            pointer-events: none; /* Ensure it doesn't interfere with foreground elements */
+            white-space: nowrap;
+        }
+
+        /* Education content */
+        .education-content {
+            position: relative;
+            z-index: 2; /* Makes sure content is above the background text */
+        }
+
+        .education-card {
+            background-color: #333;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: inline-block;
+            width: 300px; /* Make the cards uniform in size */
+        }
+
+        .education-card h3 {
+            color: #b0f2b4;
+            margin-bottom: 10px;
+        }
+
+        .education-card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="intro">
+            <h1>Hi I'm <span style="color: #7cf16e;">Ajith Abraham Ben</span>.</h1>
+            <p>3rd EAC student in Amrita Vishwa Vidyapeetham. Striving for Excellence, One Step at a Time.</p>
+            <a href="https://drive.google.com/file/d/1ZEqBlCHDCpGArYY4J9KZgF7H3T8Hywq9/view?usp=drive_link" class="btn" target="_blank">Resume</a>
+            <a href="contact.html" class="btn">Contact</a>
+        </div>
+
+        <div class="education-section">
+            <!-- Large background text -->
+            <div class="education-background">EDUCATION</div>
+
+            <!-- Foreground content -->
+            <div class="education-content">
+                <h2 style="text-align:center;">Education</h2>
+
+                <div class="education-card">
+                    <h3>Amrita Vishwa Vidyapeetham</h3>
+                    <p>B.Tech Electronics and Communication</p>
+                    <p>7.15 CGPA</p>
+                    <p>Oct 2022 – Apr 2026</p>
+                </div>
+
+                <div class="education-card">
+                    <h3>Alphonsa Residential School</h3>
+                    <p>Higher Secondary - ISC</p>
+                    <p>XI & XII – Science</p>
+                    <p>Jun 2020 – Apr 2022</p>
+                </div>
+
+                <div class="education-card">
+                    <h3>Alphonsa Residential School</h3>
+                    <p>High School – ICSE</p>
+                    <p>IX & X</p>
+                    <p>Jun 2018 – Mar 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
