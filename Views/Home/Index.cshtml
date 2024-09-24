@@ -8,123 +8,183 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #f1f1f1;
+            color: #cfacac;
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0;
         }
+
+        /* Intro Section */
         .intro {
-            text-align: center;
-            padding: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            height: auto;
         }
+
+        .intro .text {
+            flex-grow: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: -150px; /* Push text further to the left */
+        }
+
+        .intro img {
+            width: 500px;
+            height: auto;
+            margin-left: 300px; /* Move the image further to the right */
+            object-fit: contain;
+            filter: grayscale(100%);
+            background: transparent;
+        }
+
         h1 {
             font-size: 3em;
-            color: #b0f2b4;
+            color: #e4f16e;
+            margin: 0;
+            line-height: 1.2;
         }
+
+        .name-highlight {
+            color: #7cf16e;
+            font-size: 1.25em;
+        }
+
         p {
             font-size: 1.2em;
-            color: #aaaaaa;
+            color: #cec4c4;
+            margin: 10px 0 20px 0;
+            max-width: 600px;
         }
+
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
+            padding: 10px 30px;
+            margin: 10px 5px 0 0;
             border: none;
             background-color: #333;
             color: white;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 10px;
             text-decoration: none;
-        }
-        .btn:hover {
-            background-color: #555;
+            font-size: 1em;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
-        /* Education section styles */
-        .education-section {
+        .btn:hover {
+            background-color: #555;
+            transform: translateY(-3px);
+        }
+
+        /* Section styles for Education and Experience */
+        .section {
             position: relative;
-            padding: 100px 0; /* Increase padding to accommodate background text */
-            background-color: #1e1e1e;
+            padding: 80px 0;
             text-align: center;
             overflow: hidden;
         }
 
         /* Large background text */
-        .education-background {
+        .background-text {
             position: absolute;
-            top: 0;
+            top: -30px;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 12em; /* Large font size for background text */
-            color: rgba(255, 255, 255, 0.05); /* Transparent text */
+            font-size: 8em;
+            color: rgba(255, 255, 255, 0.05);
             z-index: 1;
-            pointer-events: none; /* Ensure it doesn't interfere with foreground elements */
+            pointer-events: none;
             white-space: nowrap;
         }
 
-        /* Education content */
-        .education-content {
+        /* Foreground content */
+        .section-content {
             position: relative;
-            z-index: 2; /* Makes sure content is above the background text */
+            z-index: 2;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
         }
 
-        .education-card {
+        .card {
             background-color: #333;
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
             text-align: center;
-            display: inline-block;
-            width: 300px; /* Make the cards uniform in size */
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .education-card h3 {
+        .card h3 {
             color: #b0f2b4;
             margin-bottom: 10px;
         }
 
-        .education-card p {
+        .card p {
             margin: 5px 0;
+            color: #ccc;
+        }
+
+        /* Hover effect for the card */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Education Section without background image */
+        .section-education {
+            background-color: #121212;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- Introduction Section -->
         <div class="intro">
-            <h1>Hi I'm <span style="color: #7cf16e;">Ajith Abraham Ben</span>.</h1>
-            <p>3rd EAC student in Amrita Vishwa Vidyapeetham. Striving for Excellence, One Step at a Time.</p>
-            <a href="https://drive.google.com/file/d/1ZEqBlCHDCpGArYY4J9KZgF7H3T8Hywq9/view?usp=drive_link" class="btn" target="_blank">Resume</a>
-            <a href="contact.html" class="btn">Contact</a>
+            <div class="text">
+                <h1>Hi, I'm<br><span class="name-highlight">Ajith Abraham Ben</span></h1>
+                <p>3rd-year EAC student at Amrita Vishwa Vidyapeetham. Striving for Excellence, One Step at a Time.</p>
+                <div>
+                    <a href="https://drive.google.com/file/d/1ZEqBlCHDCpGArYY4J9KZgF7H3T8Hywq9/view?usp=drive_link" class="btn" target="_blank">Resume</a>
+                    <a href="contact.html" class="btn">Contact</a>
+                </div>
+            </div>
+            <img src="https://github.com/Ajith0004/Portfolio/raw/91a392427332ed79af4156d2674e7a589b5e3ecb/MyPHOTO.png" alt="Ajith Abraham Ben">
         </div>
 
-        <div class="education-section">
-            <!-- Large background text -->
-            <div class="education-background">EDUCATION</div>
-
-            <!-- Foreground content -->
-            <div class="education-content">
-                <h2 style="text-align:center;">Education</h2>
-
-                <div class="education-card">
+        <!-- Education Section -->
+        <div class="section section-education">
+            <div class="background-text">EDUCATION</div>
+            <div class="section-content">
+                <div class="card">
                     <h3>Amrita Vishwa Vidyapeetham</h3>
                     <p>B.Tech Electronics and Communication</p>
                     <p>7.15 CGPA</p>
                     <p>Oct 2022 – Apr 2026</p>
                 </div>
 
-                <div class="education-card">
+                <div class="card">
                     <h3>Alphonsa Residential School</h3>
                     <p>Higher Secondary - ISC</p>
                     <p>XI & XII – Science</p>
                     <p>Jun 2020 – Apr 2022</p>
                 </div>
 
-                <div class="education-card">
+                <div class="card">
                     <h3>Alphonsa Residential School</h3>
                     <p>High School – ICSE</p>
                     <p>IX & X</p>
@@ -132,7 +192,17 @@
                 </div>
             </div>
         </div>
-    </div>
 
+        <!-- Experience Section -->
+        <div class="section">
+            <div class="background-text">EXPERIENCE</div>
+            <div class="section-content">
+                <div class="card">
+                    <h3>IIIT Kottayam</h3>
+                    <p>Intern</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

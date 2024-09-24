@@ -1,3 +1,11 @@
+C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.AssemblyInfo.cs
+C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.RazorAssemblyInfo.cache
+C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.RazorAssemblyInfo.cs
+C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.sourcelink.json
 C:\Users\USER\Desktop\Port\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\USER\Desktop\Port\bin\Debug\net8.0\appsettings.json
 C:\Users\USER\Desktop\Port\bin\Debug\net8.0\Port.staticwebassets.runtime.json
@@ -6,13 +14,6 @@ C:\Users\USER\Desktop\Port\bin\Debug\net8.0\Port.deps.json
 C:\Users\USER\Desktop\Port\bin\Debug\net8.0\Port.runtimeconfig.json
 C:\Users\USER\Desktop\Port\bin\Debug\net8.0\Port.dll
 C:\Users\USER\Desktop\Port\bin\Debug\net8.0\Port.pdb
-C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.AssemblyInfoInputs.cache
-C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.AssemblyInfo.cs
-C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.csproj.CoreCompileInputs.cache
-C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.RazorAssemblyInfo.cache
-C:\Users\USER\Desktop\Port\obj\Debug\net8.0\Port.RazorAssemblyInfo.cs
 C:\Users\USER\Desktop\Port\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\USER\Desktop\Port\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\USER\Desktop\Port\obj\Debug\net8.0\staticwebassets\msbuild.Port.Microsoft.AspNetCore.StaticWebAssets.props
