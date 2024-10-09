@@ -22,7 +22,7 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult bi0s()
+    public IActionResult IIITK()
     {
         return View();
     }

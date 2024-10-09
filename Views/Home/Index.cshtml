@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #cfacac;
+            font-family: 'Poppins', sans-serif; /* Changed to Poppins */
+            background-color: #000000;
+            color: #dcdcdc;
             margin: 0;
             padding: 0;
         }
@@ -26,7 +27,7 @@
             align-items: flex-end;
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            background-color: #000000;
             height: auto;
         }
 
@@ -49,20 +50,21 @@
         }
 
         h1 {
+            font-family: 'Montserrat', sans-serif;
             font-size: 3em;
-            color: #e4f16e;
+            color: #f4d160;
             margin: 0;
             line-height: 1.2;
         }
 
         .name-highlight {
-            color: #7cf16e;
+            color: #6ef3af;
             font-size: 1.25em;
         }
 
         p {
             font-size: 1.2em;
-            color: #cec4c4;
+            color: #cfcfcf;
             margin: 10px 0 20px 0;
             max-width: 600px;
         }
@@ -72,19 +74,20 @@
             padding: 10px 30px;
             margin: 10px 5px 0 0;
             border: none;
-            background-color: #333;
+            background-color: #1f4068;
             color: white;
             cursor: pointer;
             border-radius: 10px;
             text-decoration: none;
             font-size: 1em;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.5); /* Added glow */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Included box-shadow in transition */
         }
 
         .btn:hover {
-            background-color: #555;
+            background-color: #3c78af;
             transform: translateY(-3px);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.6); /* Enhanced glow on hover */
         }
 
         /* Section styles for Education and Experience */
@@ -101,6 +104,7 @@
             top: -30px;
             left: 50%;
             transform: translateX(-50%);
+            font-family: 'Montserrat', sans-serif;
             font-size: 8em;
             color: rgba(255, 255, 255, 0.05);
             z-index: 1;
@@ -119,7 +123,7 @@
         }
 
         .card {
-            background-color: #333;
+            background-color: #2b2b52;
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
@@ -127,18 +131,21 @@
             width: 300px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
+            color: #f0f0f0;
         }
 
         .card h3 {
-            color: #b0f2b4;
+            font-family: 'Poppins', sans-serif; /* Changed to Poppins */
+            color: #a4f9c8;
             margin-bottom: 10px;
             font-size: 1.5em;
             font-weight: bold;
         }
 
         .card p {
+            font-family: 'Poppins', sans-serif; /* Changed to Poppins */
             margin: 5px 0;
-            color: #ccc;
+            color: #eaeaea;
             font-size: 1.2em;
         }
 
@@ -156,7 +163,7 @@
         }
 
         .section-education {
-            background-color: #121212;
+            background-color: #000000;
         }
 
         /* Hidden content for the project */
@@ -164,8 +171,8 @@
             visibility: hidden;
             opacity: 0;
             transition: visibility 0s, opacity 0.5s ease-in-out;
-            background-color: #333;
-            color: #ccc;
+            background-color: #2b2b52;
+            color: #dcdcdc;
             padding: 20px;
             border-radius: 10px;
             margin: 20px;
@@ -187,7 +194,7 @@
                 <p>3rd-year EAC student at Amrita Vishwa Vidyapeetham. Striving for Excellence, One Step at a Time.</p>
                 <div>
                     <a href="https://drive.google.com/file/d/1ZEqBlCHDCpGArYY4J9KZgF7H3T8Hywq9/view?usp=drive_link" class="btn" target="_blank" aria-label="Resume">Resume</a>
-                    <a href="contact.html" class="btn" aria-label="Contact">Contact</a>
+                    <a href="#contact" class="btn" aria-label="Contact">Contact</a>
                 </div>
             </div>
             <img src="https://github.com/Ajith0004/Portfolio/raw/91a392427332ed79af4156d2674e7a589b5e3ecb/MyPHOTO.png" alt="Ajith Abraham Ben">
@@ -224,16 +231,15 @@
         <div class="section">
             <div class="background-text">EXPERIENCE</div>
             <div class="section-content">
-                </a>
-                <a href="@Url.Action("bi0s", "Home")" class="card-link" aria-label="IIIT Kottayam">
+                <a href="@Url.Action("IIITK", "Home")" class="card-link" aria-label="IIIT Kottayam">
                     <div class="card">
-                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/bi0s.png" alt="bi0s Hardware" class="experience-img">
-                        <h3>bi0s Hardware</h3>
-                        <p>Trainee in OT Forensics</p>
+                        <h3>IIIT Kottayam</h3>
+                        <img src="https://github.com/Ajith0004/Portfolio/raw/84bbd0f45d10ab2c2947ac891c154802038c1edb/download.png" alt="IIIT Kottayam" class="experience-img">
                     </div>
                 </a>
             </div>
         </div>
+        
         <!-- Sports Section -->
         <div class="section">
             <div class="background-text">SPORTS</div>
@@ -259,33 +265,34 @@
         </div>
         
         <!-- Projects Section -->
-<div class="section">
-    <div class="background-text">PROJECT</div>
-    <div class="section-content">
-        <div class="card" onclick="toggleDetails('project-details')">
-            <h3>Steganography</h3>
-            <p>Group project</p>
-            <img src="https://raw.githubusercontent.com/Ajith0004/Portfolio/66cfbf91ecbf1c6d0d59dba4fa80db2e5a8622f3/images.jpeg" alt="Steganography Project">
+        <div class="section">
+            <div class="background-text">PROJECT</div>
+            <div class="section-content">
+                <div class="card" onclick="toggleDetails('project-details')">
+                    <h3>Steganography</h3>
+                    <p>Group project</p>
+                    <img src="https://raw.githubusercontent.com/Ajith0004/Portfolio/66cfbf91ecbf1c6d0d59dba4fa80db2e5a8622f3/images.jpeg" alt="Steganography Project">
+                </div>
+
+                <div class="card" onclick="toggleDetails('embedded-details')">
+                    <h3>Embedded System Project</h3>
+                    <p>Group project</p>
+                    <img src="https://raw.githubusercontent.com/Ajith0004/Portfolio/2dcffd3489cf5066ad8b7e073a1104d899bf1a46/download.jpeg" alt="Embedded System Project">
+                </div>
+            </div>
+
+            <!-- Hidden content (details about the Steganography project) -->
+            <div id="project-details">
+                <h3>Project Details</h3>
+                <p>This Steganography project was done as part of a group, focusing on techniques to hide data within images.</p>
+            </div>
+
+            <!-- Hidden content (details about the Embedded System project) -->
+            <div id="embedded-details">
+                <h3>Project Details</h3>
+                <p>This Embedded System project was done as part of a group, focusing on designing low-power embedded solutions for IoT devices.</p>
+            </div>
         </div>
-
-        <div class="card" onclick="toggleDetails('embedded-details')">
-            <h3>Embedded System Project</h3>
-            <p>Group project</p>
-            <img src="https://raw.githubusercontent.com/Ajith0004/Portfolio/2dcffd3489cf5066ad8b7e073a1104d899bf1a46/download.jpeg" alt="Embedded System Project">
-        </div>
     </div>
-
-    <!-- Hidden content (details about the Steganography project) -->
-    <div id="project-details">
-        <h3>Project Details</h3>
-        <p>This Steganography project was done as part of a group, focusing on techniques to hide data within images.</p>
-    </div>
-
-    <!-- Hidden content (details about the Embedded System project) -->
-    <div id="embedded-details">
-        <h3>Project Details</h3>
-        <p>This Embedded System project was done as part of a group, focusing on designing low-power embedded solutions for IoT devices.</p>
-    </div>
-</div>
 </body>
 </html>
