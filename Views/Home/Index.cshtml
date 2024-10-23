@@ -51,15 +51,16 @@
 
         h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 3em;
-            color: #f4d160;
+            font-size: 3.5em; /* Reduced size to make it fit */
+            color: #ff6ec7;
             margin: 0;
-            line-height: 1.2;
+            line-height: 1.2; /* Reduced line-height */
         }
 
         .name-highlight {
-            color: #6ef3af;
-            font-size: 1.25em;
+            color: #00ffcc;
+            font-size: 1em; /* Reduced font-size */
+            white-space: nowrap; /* Prevents text wrapping */
         }
 
         p {
@@ -72,12 +73,12 @@
         .btn {
             display: inline-block;
             padding: 10px 30px;
-            margin: 10px 5px 0 0;
-            border: none;
-            background-color: #1f4068;
-            color: white;
+            margin: 10px 10px 0 0;
+            border: 2px solid #00ffcc;
+            background-color:transparent;
+            color: #00ffcc;
             cursor: pointer;
-            border-radius: 10px;
+            border-radius: 20px;
             text-decoration: none;
             font-size: 1em;
             box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.5); /* Added glow */
@@ -85,7 +86,7 @@
         }
 
         .btn:hover {
-            background-color: #3c78af;
+            background-color: #00ffcc;
             transform: translateY(-3px);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.6); /* Enhanced glow on hover */
         }
@@ -123,30 +124,31 @@
         }
 
         .card {
-            background-color: #2b2b52;
-            padding: 20px;
+            background-color: #1e1e1e; /* Dark background similar to the second image */
+            padding: 30px;
             margin: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
             text-align: center;
-            width: 300px;
+            width: 360px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            color: #f0f0f0;
+            color: #dcdcdc; /* Lighter text color for contrast */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
         .card h3 {
             font-family: 'Poppins', sans-serif; /* Changed to Poppins */
             color: #a4f9c8;
-            margin-bottom: 10px;
-            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-size: 1.8em;
             font-weight: bold;
         }
 
         .card p {
-            font-family: 'Poppins', sans-serif; /* Changed to Poppins */
-            margin: 5px 0;
-            color: #eaeaea;
-            font-size: 1.2em;
+            font-family: 'Poppins', sans-serif;
+            margin: 10px 0;
+            color: #eaeaea; /* Lighter gray for better readability */
+            font-size: 1.3em;
         }
 
         .card img {
@@ -158,8 +160,8 @@
         }
 
         .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transform: scale(1.08);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
 
         .section-education {
@@ -190,7 +192,7 @@
         <!-- Introduction Section -->
         <div class="intro">
             <div class="text">
-                <h1>Hi, I'm<br><span class="name-highlight">Ajith Abraham Ben</span></h1>
+                <h1><strong>Hi, I'm</strong><br><span class="name-highlight"><strong>Ajith Abraham Ben</strong></span></h1>
                 <p>3rd-year EAC student at Amrita Vishwa Vidyapeetham. Striving for Excellence, One Step at a Time.</p>
                 <div>
                     <a href="https://drive.google.com/file/d/1ZEqBlCHDCpGArYY4J9KZgF7H3T8Hywq9/view?usp=drive_link" class="btn" target="_blank" aria-label="Resume">Resume</a>
@@ -207,8 +209,8 @@
                 <div class="card">
                     <h3>Amrita Vishwa Vidyapeetham</h3>
                     <p>B.Tech Electronics and Communication</p>
-                    <p>7.15 CGPA</p>
-                    <p>Oct 2022 – Apr 2026</p>
+                    <p>7.45 CGPA</p>
+                    <p>Oct 2022 – Present</p>
                 </div>
 
                 <div class="card">
@@ -246,19 +248,19 @@
             <div class="section-content">
                 <div class="card">
                     <img src="https://example.com/sports-image.jpg" alt="Football" class="experience-img">
-                    <h3>Football</h3>
+                    <h3>Badminton</h3>
                     <p>Played in intercollege tournaments as a midfielder.</p>
                 </div>
 
                 <div class="card">
                     <img src="https://example.com/sports-image.jpg" alt="Basketball" class="experience-img">
-                    <h3>Basketball</h3>
+                    <h3>Kabadi</h3>
                     <p>Part of the college basketball team, played in district-level matches.</p>
                 </div>
 
                 <div class="card">
                     <img src="https://example.com/sports-image.jpg" alt="Running" class="experience-img">
-                    <h3>Running</h3>
+                    <h3>Athletics</h3>
                     <p>Won several 100m and 200m track events in school.</p>
                 </div>
             </div>
