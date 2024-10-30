@@ -8,28 +8,36 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Port.styles.css" asp-append-version="true" />
     <style>
-        /* Reset margins and paddings */
+        /* Reset margins and paddings to remove any default spacing */
         html, body {
             margin: 0;
             padding: 0;
         }
 
-        /* Ensure the main content area grows to fill available space */
-        main {
-            padding-bottom: 30px; /* Add some padding at the bottom */
+        /* Ensure no extra space in the header */
+        header {
+            margin: 0;
+            padding: 0;
         }
 
-        /* Footer styling */
+        /* Make sure the navbar has no background or a background matching the page */
+        .navbar {
+            background-color: transparent; /* or use bg-dark if you want a black background */
+            border: none; /* Remove any border that might cause lines */
+        }
+
+        /* Remove the shadow */
+        .box-shadow {
+            box-shadow: none; /* This removes the default box shadow */
+        }
+
+        /* Center the footer text and remove the border */
         footer {
-            background-color: #f8f9fa; /* Optional background color */
             text-align: center;
-            padding: 10px 0;
-            width: 100%;
-            position: relative;
-            bottom: 0;
+            border-top: none; /* Removes the line above the footer */
+            padding: 10px 0; /* Adds some space to the top and bottom */
         }
 
-        /* Contact info styling */
         .contact-info {
             text-align: center;
             padding: 20px 0;
@@ -66,7 +74,8 @@
     </div>
 
     <!-- Footer section with contact info -->
-    <<footer id="contact" class="footer text-muted">
+   
+    <footer id="contact" class="footer text-muted"> <!-- Added id "contact" -->
         <div class="container">
             <div class="contact-info">
                 <a href="mailto:ajithben2004@gmail.com">
@@ -85,6 +94,7 @@
             &copy; Copyright 2024 © Ajithabrahamben
         </div>
     </footer>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
